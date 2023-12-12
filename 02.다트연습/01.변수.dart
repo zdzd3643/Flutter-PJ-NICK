@@ -21,4 +21,28 @@ void main(List<String> args) {
   num number3 = 100;
   number3 = 7.83;
   print(number3);
+
+  // 2. 문자형 : String
+  String name = "톰 행크스";
+  // name = 88;
+  print("나는 "+name+"입니다!");
+
+  // 3. 불린형 : bool
+  bool isTrue = true;
+  print(isTrue);
+
+  // 4. 콜렉션 : List / Set / Map
+  // List / Set / Map
+  // 4-1. List 형 - 배열과 유사함
+  List<String> we = ['너','나','우리'];
+  print(we[2]+'는 모두 친구입니다!');
+  print(we.length);
+
+  // 4-2. Set형 - 순서가 없고 중복되지 않는 데이터집합
+  Set<int> evens = {2,4,6,8,10};
+  print(evens);
+
+  // 4-3. Map형 - 데이터에 라벨링된 데이터 집합(객체와 유사)
+  Map<String,String> actor = {"이름":"강동원","나이":"40",};
+  print(actor);
 } 
