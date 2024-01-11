@@ -1,6 +1,6 @@
 // 입력폼양식 위젯 ////////////
 
-import 'package:app_04_login/c
+import 'package:app_04_login/components/custom_form.dart';
 import 'package:app_04_login/size.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +33,7 @@ class CustomForm extends StatelessWidget {
 
           // 2. 비밀번호 입력양식(글자+입력폼)
           CustomTextFormField('Password'),
-          
+
           SizedBox(height: largeGap),
           // 3. TextButton : 로그인버튼
           TextButton(
@@ -46,9 +46,11 @@ class CustomForm extends StatelessWidget {
               // 유효성검사에 전역키를 사용함!!!
               // 유효성검사 속성셋팅된 것과 메서드로 연결하여 true이면
               // 페이지 이동함!
-              if(_formKey.currentState!.validate()){
+              if (_formKey.currentState!.validate()) {
                 Navigator.pushNamed(context, '/home');
-              } /// if //////
+              }
+
+              /// if //////
             },
             child: Text('Login'),
           )

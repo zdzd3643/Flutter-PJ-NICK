@@ -1,9 +1,9 @@
 // 로그인 페이지 /////
 
-import 'package:app_04_login/';
+import 'package:app_04_login/components/custom_form.dart';
 import 'package:flutter/material.dart';
 // 로고위젯추가
-import 'package:app_04_login/';
+import 'package:app_04_login/components/logo.dart';
 // 사이즈 프리셋팅
 import 'package:app_04_login/size.dart';
 
